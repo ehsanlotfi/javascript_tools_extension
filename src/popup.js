@@ -5,7 +5,8 @@ $(function() {
         "https://api.github.com/repos/facebook/React/releases/latest",
         "https://api.github.com/repos/facebook/React-native/releases/latest",
         "https://api.github.com/repos/webpack/Webpack/releases/latest",
-        "https://api.github.com/repos/vuejs/Vue/releases/latest"
+        "https://api.github.com/repos/vuejs/Vue/releases/latest",
+        "https://api.github.com/repos/d3/D3/releases/latest"
     ];
 
     url.forEach(f => {
