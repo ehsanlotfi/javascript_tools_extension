@@ -12,6 +12,12 @@
         "js": ["/lib/jquery.js", "/src/content.js"],
         "all_frames": true
     }],
+    "icons": {
+        "16": "image/logo16.png",
+        "32": "image/logo32.png",
+        "48": "image/logo48.png",
+        "128": "image/logo128.png"
+    },
     "browser_action": { "default_popup": "/src/popup.html" },
     "permissions": ["*://google.com/*"],
     "content_security_policy": "script-src 'self' https://cdn.mxpnl.com; object-src 'self'"
