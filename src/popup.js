@@ -6,7 +6,7 @@
  * 4:"Desktop Freamworks",
  * 5:"Task Runner",
  * 6:"Pakage Manager",
- * 7:"Superset and compiler"
+ * 7:"Superset/Compiler/Transpiler"
  * 8:"Testing",
  * 9:"Module Loader/Bundler",
  * 10:"Game Engines",
@@ -104,11 +104,25 @@ $(function() {
 
 
     })
-    console.log(repos);
+
 
 
     function getVersion(tags) {
         return tags.map(f => f.name).filter(e => e.replace("v", "").split(".").filter(s => isNaN(+s)).length === 0)[0]
     }
+
+
+    // Append To HTML
+    setTimeout(function() {
+        repos.forEach(f => {
+            $("#type" + f.type).append(
+                `<li>
+                    <img src="">
+                    <a href="${f.url}" target="_blank">${f.name}</a>
+                    <a href="${f.releaseUrl}" target="_blank">${f.version}</a>
+                </li>`);
+        })
+    }, 5000)
+
 
 });
